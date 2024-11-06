@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+
+  background-color: rgb(33,33,33);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(136, 125, 125);
+}
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.buttons>button{
+
+  padding: 1.2rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 20px;
+  border: 1px solid rgb(100, 91, 91);
+  text-wrap: nowrap;
+
+  &:hover{
+
+    background-color: rgba(128, 128, 128, 0.257);
+    transform: scale(90%);
+  }
+
+}
+
+.chats {
+  height: calc(100vh - 200px); /* Adjust the height of the chat container */
+  overflow-y: auto;
+  padding-bottom: 60px; /* Make room for input field */
+}
+
+.chats::-webkit-scrollbar{
+
+  display: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+
+
+}
+
+
