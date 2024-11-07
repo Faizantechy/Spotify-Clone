@@ -60,7 +60,7 @@ function App() {
 
         {userMsg.length === 0 && (
          <div className=" flex gap-5 justify-center items-center mt-10 flex-wrap max-w-full">
-         <button className="md:p-[0.5rem] md:text-[17px]"  onClick={() => {
+         <button className=" buttons md:p-[0.5rem] md:text-[17px]"  onClick={() => {
            
            setInput('Create an Image of a bird flying on the sky......')
 
