@@ -46,31 +46,42 @@ function App() {
       </div>
 
       <div className="main-container  max-w-screen mt-[8rem] lg:mt-[10rem] h-[100vh]">
-        <h1 className="lg:text-5xl text-3xl md:3xl text-center font-bold mt-[2rem] text-white">
+       
+       
+       
+        
+        {userMsg.length === 0 && (
+          
+          <h1 className="lg:text-5xl text-3xl md:3xl text-center font-bold mt-[2rem] text-white">
           What Can I Help With?
         </h1>
+        )}
+       
 
-        <div className="buttons flex gap-5 justify-center items-center mt-10 flex-wrap max-w-full">
-          <button className="md:p-[0.5rem] md:text-[17px]"  onClick={() => {
-            
-            setInput('Create an Image of a bird flying on the sky......')
+        {userMsg.length === 0 && (
+         <div className=" flex gap-5 justify-center items-center mt-10 flex-wrap max-w-full">
+         <button className="md:p-[0.5rem] md:text-[17px]"  onClick={() => {
+           
+           setInput('Create an Image of a bird flying on the sky......')
 
-          }}>
-            <i className="ri-image-fill text-green-600"></i>Create image
-          </button>
-          <button>
-            <i className="ri-lightbulb-flash-line text-yellow-500"></i>Make a
-            plan
-          </button>
-          <button>
-            <i className="ri-booklet-fill text-orange-400"></i>Summarise text
-          </button>
-          <button>
-            <i className="ri-gift-line text-sky-500"></i>Surprise me
-          </button>
-        </div>
+         }}>
+           <i className="ri-image-fill text-green-600"></i>Create image
+         </button>
+         <button>
+           <i className="ri-lightbulb-flash-line text-yellow-500"></i>Make a
+           plan
+         </button>
+         <button>
+           <i className="ri-booklet-fill text-orange-400"></i>Summarise text
+         </button>
+         <button>
+           <i className="ri-gift-line text-sky-500"></i>Surprise me
+         </button>
+       </div>
+          
+        )}
 
-        <div className="chats w-full   items-center mt-10 flex-col  gap-10 px-10 h-[100vh] ">
+        <div className="chats w-full  mt-5 items-center lg:mt-10 flex-col  gap-10 px-10 h-[100vh] ">
           
 
           <div className="user-msg flex justify-end flex-col ga-2 mb-5 w-full">
